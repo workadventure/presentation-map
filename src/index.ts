@@ -3,6 +3,7 @@ var zoneOfficeName = "popupOfficeZone";
 var zoneEventName = "popupEventZone";
 var zoneSchoolName = "popupSchoolZone";
 var zoneTCMName = "popupTCMZone";
+var zoneFootballName = "popupFootballZone";
 
 var urlPricing = "https://workadventu.re/pricing";
 var urlSchoolOffer = "https://workadventu.re/school-offer";
@@ -57,6 +58,19 @@ WA.onEnterZone(zoneSchoolName, () => {
             })
         }]);
 })
+
+WA.onEnterZone(zoneFootballName, () => {
+    currentPopup = WA.openPopup("popUpFootball", "Congratulations ! You found a ball of the EURO 2021. There is two more to find in our office. If you find them, send the three codes to g.pitaud@workadventu.re. THE CODE : 8N5J5", [
+        {
+            label: "Close",
+            className: "normal",
+            callback: (popup => {
+                popup.close();
+            })
+        }]);
+})
+
+WA.onLeaveZone(zoneFootballName, closePopUp)
 
 WA.onLeaveZone(zoneSchoolName, closePopUp)
 
