@@ -60,7 +60,7 @@ WA.onEnterZone(zoneSchoolName, () => {
 })
 
 WA.onEnterZone(zoneFootballName, () => {
-    currentPopup = WA.openPopup("popUpFootball", "Congratulations ! You found a ball of the EURO 2021. There is two more to find in our office. If you find them, send the three codes to g.pitaud@workadventu.re. THE CODE : 8N5J5", [
+    currentPopup = WA.openPopup("popUpFootball", "Congratulations ! You found a ball of the EURO 2021. There is two more to find in our office. If you find them, send the three codes to g.pitaud@workadventu.re. THE CODE : B2U45", [
         {
             label: "Close",
             className: "normal",
